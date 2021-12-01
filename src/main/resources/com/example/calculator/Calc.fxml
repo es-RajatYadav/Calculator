@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="com.example.calculator.Calc_Controller" xmlns:fx="https://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10" gridLinesVisible="false">
+    <Label fx:id="Calc_EvalPreview"/>
+    <TextField fx:id="Calc_InputArea" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    <Button text="+" fx:id="Calc_AdditionBtn" GridPane.rowIndex="4" GridPane.columnIndex="3" onAction="#onArithmeticButtonClick"/>
+    <Button text=" - " fx:id="Calc_SubtractionBtn" GridPane.rowIndex="3" GridPane.columnIndex="3" onAction="#onArithmeticButtonClick"/>
+    <Button text=" * " fx:id="Calc_MultiplicationBtn" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+    <Button text=" / " fx:id="Calc_divisonBtn" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+    <Button text="=" fx:id="Calc_EvaluateBtn" GridPane.rowIndex="5" GridPane.columnIndex="3" onAction="#onArithmeticButtonClick"/>
+    <Button text="0" fx:id="Press0Btn" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" minWidth="60"/>
+    <Button text="1" fx:id="Press1Btn" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    <Button text="2" fx:id="Press2Btn" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+    <Button text="3" fx:id="Press3Btn" GridPane.rowIndex="4" GridPane.columnIndex="2"  />
+    <Button text="4" fx:id="Press4Btn" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+    <Button text="5" fx:id="Press5Btn" GridPane.rowIndex="3" GridPane.columnIndex="1"  />
+    <Button text="6" fx:id="Press6Btn" GridPane.rowIndex="3" GridPane.columnIndex="2"  />
+    <Button text="7" fx:id="Press7Btn" GridPane.rowIndex="2" GridPane.columnIndex="0"  />
+    <Button text="8" fx:id="Press8Btn" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+    <Button text="9" fx:id="Press9Btn" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+    <Button text="." fx:id="PressDotBtn" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+    <Button text="AC" fx:id="PressACBtn" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <Button text="-" fx:id="PressBackSpaceBtn" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button text="Mod" fx:id="PressModulusBtn" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+
+</GridPane>
